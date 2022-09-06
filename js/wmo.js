@@ -1,4 +1,5 @@
-document
+$(document).ready(function() {
+  document
   .querySelectorAll('.menu > li > a[href^="#"]')
   .forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {
@@ -72,6 +73,13 @@ sections.forEach(function (section, i) {
     }
 
     const body = document.querySelector("html");
-    window.scrollTo({ top: moveTop, left: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: moveTop,
+      left: 0,
+      behavior: "smooth"
+    });
   });
 });
+
+});
+
